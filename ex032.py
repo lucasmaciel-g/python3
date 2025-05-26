@@ -1,14 +1,11 @@
 from time import sleep
-ano = int(input("Digite aqui um ano para saber se é bissexto ou não: "))
+from datetime import date
+ano = int(input("Caso queira saber o ano atual digite 0 ou digite o ano que quer testar: "))
 print("PROCESSANDO...")
 sleep(2)
-if ano % 4 == 0:
-    if ano % 100 == 0:
-        if ano % 400 == 0:
-            print(f"O ano de {ano} é bissexto.")
-        else:
-            print("O ano não é bissexto.")
-    else:
-        print("o ano é bissexto.")
+if ano == 0:
+    ano = date.today().year
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print(f"O ano de {ano} é bissexto.")
 else:
-        print("o ano não é bissexto.")
+    print(f"O ano {ano} não é bissexto.")
