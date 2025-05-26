@@ -1,0 +1,5 @@
+frasenormal = str(input("Digite uma frase para ser analisada: "))
+frase = frasenormal.lower()
+print(f"Nessa sua frase, a letra A aparece {frase.count("a")} vezes.")
+print(f"A letra A aparece primeiro na posição {frase.find("a")}")
+print(f"Já na ultima vez ela aparece na posição {frase.rfind('a')}")
