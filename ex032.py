@@ -1,4 +1,7 @@
+from time import sleep
 ano = int(input("Digite aqui um ano para saber se é bissexto ou não: "))
+print("PROCESSANDO...")
+sleep(2)
 if ano % 4 == 0:
     if ano % 100 == 0:
         if ano % 400 == 0:
