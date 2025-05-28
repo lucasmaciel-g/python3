@@ -3,7 +3,7 @@ n = int(input("Digite aqui um número: "))
 escolha =  int(input("Você quer converter para binário [1], octal [2] ou hexadecimal [3]? "))
 if escolha == 1:
     alteracao = bin(n)
-    print(f"Seu número {n}, em base binária é {alteracao[2:]}.")
+    print(f"Seu número {n}, em base binária é {bin(n)[2:]}.")
 elif escolha == 2:
     alteracao = oct(n)
     print(f"Seu número {n}, em base octal é {alteracao[2:]}.")
